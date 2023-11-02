@@ -1,24 +1,22 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+rails練習用。四則演算ができるAPI
 
-Things you may want to cover:
+## usage
 
-* Ruby version
+```
+% curl -X POST -d "num1=5.5&num2=7.4" http://localhost:3000/calculate/add
+{"result":12.9}%  
+```
 
-* System dependencies
+## endpoints
 
-* Configuration
+## Calculate
 
-* Database creation
+`/calculate/add`,
+`/calculate/sub`,
+`/calculate/div`,
+`/calculate/mul`
 
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+## Health Check
+`/up`
